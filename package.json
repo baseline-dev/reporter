@@ -25,6 +25,7 @@
     "tape": "^5.0.1"
   },
   "dependencies": {
+    "esm": "^3.2.25",
     "fastest-validator": "^1.5.1"
   }
 }
