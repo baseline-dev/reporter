@@ -1,6 +1,6 @@
 {
   "name": "@baseline-dev/reporter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Consistent error and response handling.",
   "main": "src/index.js",
   "scripts": {
