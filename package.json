@@ -1,0 +1,30 @@
+{
+  "name": "@baseline-dev/reporter",
+  "version": "0.0.1",
+  "description": "Consistent error and response handling.",
+  "main": "src/index.js",
+  "scripts": {
+    "test:unit": "tape --require esm src/*.test.js src/**/*.test.js src/**/**/*.test.js | tap-spec",
+    "coverage": "nyc npm run test:unit",
+    "release": "npm version patch",
+    "publish:npm": "npm run test:unit && npm run release && npm publish --access public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baseline-dev/reporter.git"
+  },
+  "author": "Nikolai Onken <nikolai@nikolaionken.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/baseline-dev/reporter/issues"
+  },
+  "homepage": "https://github.com/baseline-dev/reporter#readme",
+  "devDependencies": {
+    "nyc": "^15.1.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^5.0.1"
+  },
+  "dependencies": {
+    "fastest-validator": "^1.5.1"
+  }
+}
